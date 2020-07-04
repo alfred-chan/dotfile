@@ -36,6 +36,7 @@ Plug 'micha/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'thaerkh/vim-workspace'
 
 call plug#end()
 " vim-plug end
@@ -93,7 +94,7 @@ inoremap <unique> <M-8> <C-O>8gt
 inoremap <unique> <M-9> <C-O>9gt
 inoremap <unique> <M-0> <C-O>10gt
 
-" Quickly open/reload vim
+"Quickly open/reload vim
 nnoremap <leader>ev :tabe $MYVIMRC<CR>  
 nnoremap <leader>sv :source $MYVIMRC<CR> 
 
@@ -128,3 +129,5 @@ vmap <C-c> y:new ~/.vimbuffer<CR>VGp:x<CR> \| :!cat ~/.vimbuffer \| clip.exe <CR
 " paste from buffer
 map <C-v> :r ~/.vimbuffer<CR>
 
+" vim-workspace
+let g:workspace_autosave_always = 1
